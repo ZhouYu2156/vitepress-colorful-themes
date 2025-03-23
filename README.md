@@ -29,7 +29,30 @@ A beautiful theme extension for VitePress with 16 colorful preset themes and smo
 ## Installation
 
 ```bash
+# npm
 npm install vitepress-colorful-themes
+
+# yarn
+yarn add vitepress-colorful-themes
+
+# pnpm
+pnpm add vitepress-colorful-themes
+```
+
+You also need to install the peer dependencies if they are not already in your project:
+
+```bash
+# npm
+npm install element-plus @element-plus/icons-vue
+npm install -D unplugin-auto-import unplugin-vue-components
+
+# yarn
+yarn add element-plus @element-plus/icons-vue
+yarn add -D unplugin-auto-import unplugin-vue-components
+
+# pnpm
+pnpm add element-plus @element-plus/icons-vue
+pnpm add -D unplugin-auto-import unplugin-vue-components
 ```
 
 ## Usage
@@ -40,15 +63,15 @@ npm install vitepress-colorful-themes
 import type { Theme } from 'vitepress'
 import ColorfulTheme from 'vitepress-colorful-themes'
 
-// 1. 方式一: 在 .vitepress/theme/index.ts 中直接导入再导出即可
+// Option 1: Simply import and export
 export default ColorfulTheme
 
-// 2. 方式二
+// Option 2: Extend with custom configuration
 export default {
   extends: ColorfulTheme,
-  Layout, // 自定义
+  Layout, // Custom layout if needed
   enhanceApp({ app, router, siteData }) {
-    // 其他操作
+    // Your custom app enhancement
   },
 } satisfies Theme
 ```
@@ -72,6 +95,10 @@ export default defineConfig({
         resolvers: [ElementPlusResolver()],
       }),
     ],
+    // Make sure your VitePress can resolve TypeScript files
+    resolve: {
+      extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
+    }
   },
 })
 ```
@@ -119,7 +146,30 @@ npm run docs:dev
 ## 安装
 
 ```bash
+# npm
 npm install vitepress-colorful-themes
+
+# yarn
+yarn add vitepress-colorful-themes
+
+# pnpm
+pnpm add vitepress-colorful-themes
+```
+
+你还需要安装以下peer依赖（如果它们尚未在你的项目中）：
+
+```bash
+# npm
+npm install element-plus @element-plus/icons-vue
+npm install -D unplugin-auto-import unplugin-vue-components
+
+# yarn
+yarn add element-plus @element-plus/icons-vue
+yarn add -D unplugin-auto-import unplugin-vue-components
+
+# pnpm
+pnpm add element-plus @element-plus/icons-vue
+pnpm add -D unplugin-auto-import unplugin-vue-components
 ```
 
 ## 使用方法
@@ -127,9 +177,20 @@ npm install vitepress-colorful-themes
 1. 创建或修改 `.vitepress/theme/index.ts` 文件：
 
 ```ts
+import type { Theme } from 'vitepress'
 import ColorfulTheme from 'vitepress-colorful-themes'
 
+// 方式一：直接导入再导出
 export default ColorfulTheme
+
+// 方式二：扩展自定义配置
+export default {
+  extends: ColorfulTheme,
+  Layout, // 如需要可以使用自定义布局
+  enhanceApp({ app, router, siteData }) {
+    // 你的自定义应用增强
+  },
+} satisfies Theme
 ```
 
 2. 在 `.vitepress/config.mts` 中配置 Element Plus 的自动导入：
@@ -151,6 +212,10 @@ export default defineConfig({
         resolvers: [ElementPlusResolver()],
       }),
     ],
+    // Make sure your VitePress can resolve TypeScript files
+    resolve: {
+      extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
+    }
   },
 })
 ```

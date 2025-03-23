@@ -1,9 +1,17 @@
 {
   "name": "vitepress-colorful-themes",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A beautiful theme extension for VitePress with 16 colorful preset themes and smooth theme switching animations",
   "main": "index.ts",
   "types": "index.ts",
+  "files": [
+    "index.ts",
+    "Layout.vue",
+    "style.css",
+    "components",
+    "styles",
+    "public"
+  ],
   "keywords": [
     "vitepress",
     "vitepress-theme",
@@ -24,29 +32,19 @@
     "url": "https://github.com/ZhouYu2156/vitepress-colorful-themes/issues"
   },
   "license": "MIT",
-  "files": [
-    "index.ts",
-    "Layout.vue",
-    "style.css",
-    "styles",
-    "components",
-    "utils"
-  ],
   "exports": {
     ".": "./index.ts",
     "./styles": "./styles",
-    "./utils": "./utils"
+    "./components": "./components"
   },
-  "peerDependencies": {
-    "vitepress": "^1.0.0-rc.40",
+  "dependencies": {
     "vue": "^3.3.0",
     "element-plus": "^2.3.0",
     "@element-plus/icons-vue": "^2.1.0"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.40",
-    "vue": "^3.3.0",
-    "element-plus": "^2.3.0",
-    "@element-plus/icons-vue": "^2.1.0"
+    "@element-plus/icons-vue": "^2.3.1",
+    "@types/node": "^22.13.11",
+    "element-plus": "^2.9.7"
   }
 }
