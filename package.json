@@ -1,6 +1,6 @@
 {
   "name": "vitepress-colorful-themes",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A beautiful theme extension for VitePress with 16 colorful preset themes and smooth theme switching animations",
   "main": "index.ts",
   "types": "index.ts",
