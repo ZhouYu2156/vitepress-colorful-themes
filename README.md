@@ -39,7 +39,7 @@ yarn add vitepress-colorful-themes
 pnpm add vitepress-colorful-themes
 ```
 
-You also need to install the peer dependencies if they are not already in your project:
+You also need to install Element Plus and related plugins for automatic component imports:
 
 ```bash
 # npm
@@ -103,6 +103,8 @@ export default defineConfig({
 })
 ```
 
+> **IMPORTANT**: The Element Plus auto-import configuration is crucial! Without it, the theme selector dropdown menu will not work properly.
+
 3. Start your VitePress development server:
 
 ```bash
@@ -110,6 +112,22 @@ npm run docs:dev
 ```
 
 ## 🔄 Update Log
+
+### v1.2.0 (2024-03-28)
+- 🎨 **Optimization**: Simplified theme styling mechanism by using CSS variables directly 
+- 🧩 **Architecture**: Removed redundant class-based style overrides in favor of CSS variables
+- 🚀 **Performance**: More efficient theming system with less CSS code
+- 📱 **Adaptation**: Better dark mode experience for forest-green, warm-gold, and rose themes
+
+### v1.1.1 (2024-03-27)
+- 🐞 **Fixed**: Improved navigation link hover and active states for forest-green, warm-gold, and rose themes in dark mode
+- 🎨 **Enhancement**: Added hover and active states to sidebar links for better user experience
+- 📱 **UI**: Better overall navigation consistency in dark mode for special themes
+
+### v1.0.6 (2024-03-26)
+- 🐞 **Fixed**: Improved text contrast for forest-green, warm-gold, and rose themes in dark mode
+- 🎨 **Enhancement**: Enhanced button text visibility in dark mode for all themes
+- 📱 **UI**: Better contrast for navigation links and feature sections in dark mode
 
 ### v1.0.2 (2024-03-25)
 - 🎨 **Optimization**: Improved brand button style, increased font weight to 600, making it more rounded and readable
@@ -156,7 +174,7 @@ yarn add vitepress-colorful-themes
 pnpm add vitepress-colorful-themes
 ```
 
-你还需要安装以下peer依赖（如果它们尚未在你的项目中）：
+你还需要安装Element Plus和相关插件以支持组件自动导入：
 
 ```bash
 # npm
@@ -212,13 +230,15 @@ export default defineConfig({
         resolvers: [ElementPlusResolver()],
       }),
     ],
-    // Make sure your VitePress can resolve TypeScript files
+    // 确保你的VitePress可以解析TypeScript文件
     resolve: {
       extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue']
     }
   },
 })
 ```
+
+> **重要提示**：Element Plus的自动导入配置是必不可少的！如果没有正确配置，主题选择器下拉菜单将无法正常工作。
 
 3. 启动 VitePress 开发服务器：
 
@@ -227,6 +247,22 @@ npm run docs:dev
 ```
 
 ## 更新日志
+
+### v1.2.0 (2024-03-28)
+- 🎨 **Optimization**: Simplified theme styling mechanism by using CSS variables directly 
+- 🧩 **Architecture**: Removed redundant class-based style overrides in favor of CSS variables
+- 🚀 **Performance**: More efficient theming system with less CSS code
+- 📱 **Adaptation**: Better dark mode experience for forest-green, warm-gold, and rose themes
+
+### v1.1.1 (2024-03-27)
+- 🐞 **修复**: 改进导航链接悬停和激活状态，森林绿、暖金和玫瑰主题在暗模式下
+- 🎨 **增强**: 添加侧边栏链接悬停和激活状态，改善用户体验
+- 📱 **UI**: 改善特殊主题在暗模式下的整体导航一致性
+
+### v1.0.6 (2024-03-26)
+- 🐞 **修复**: 改进森林绿、暖金和玫瑰主题在暗模式下的文字对比度
+- 🎨 **增强**: 增强所有主题在暗模式下的按钮文字可见性
+- 📱 **UI**: 改善导航链接和功能部分在暗模式下的对比度
 
 ### v1.0.2 (2024-03-25)
 - 🎨 **优化**: 改进品牌按钮样式，增加字重至 600，使其更圆润、更易读

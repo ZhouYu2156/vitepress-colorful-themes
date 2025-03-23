@@ -1346,10 +1346,36 @@
   --vp-c-bg-elv: #102f1d;
   --vp-c-bg-soft: #102f1d;
 
-  /* 文本颜色 */
-  --vp-c-text-1: rgba(220, 252, 231, 0.9);
-  --vp-c-text-2: rgba(220, 252, 231, 0.62);
-  --vp-c-text-3: rgba(220, 252, 231, 0.4);
+  /* 文本颜色 - 提高亮度和对比度 */
+  --vp-c-text-1: rgba(255, 255, 255, 0.95);
+  --vp-c-text-2: rgba(255, 255, 255, 0.75);
+  --vp-c-text-3: rgba(255, 255, 255, 0.5);
+
+  /* 品牌与UI元素颜色 - 在暗色模式下使用更亮的颜色 */
+  --vp-c-indigo-1: #4ade80;
+  --vp-c-indigo-2: #22c55e;
+  --vp-c-indigo-3: #16a34a;
+  --vp-c-indigo-soft: rgba(74, 222, 128, 0.16);
+
+  --vp-c-purple-1: #4ade80;
+  --vp-c-purple-2: #22c55e;
+  --vp-c-purple-3: #16a34a;
+  --vp-c-purple-soft: rgba(74, 222, 128, 0.16);
+
+  --vp-c-green-1: #4ade80;
+  --vp-c-green-2: #22c55e;
+  --vp-c-green-3: #16a34a;
+  --vp-c-green-soft: rgba(74, 222, 128, 0.16);
+
+  --vp-c-yellow-1: #4ade80;
+  --vp-c-yellow-2: #22c55e;
+  --vp-c-yellow-3: #16a34a;
+  --vp-c-yellow-soft: rgba(74, 222, 128, 0.16);
+
+  --vp-c-red-1: #4ade80;
+  --vp-c-red-2: #22c55e;
+  --vp-c-red-3: #16a34a;
+  --vp-c-red-soft: rgba(74, 222, 128, 0.16);
 
   /* 边框颜色 */
   --vp-c-border: #205b38;
@@ -1432,10 +1458,36 @@
   --vp-c-bg-elv: #372a12;
   --vp-c-bg-soft: #372a12;
 
-  /* 文本颜色 */
-  --vp-c-text-1: rgba(254, 243, 199, 0.9);
-  --vp-c-text-2: rgba(254, 243, 199, 0.62);
-  --vp-c-text-3: rgba(254, 243, 199, 0.4);
+  /* 文本颜色 - 提高亮度和对比度 */
+  --vp-c-text-1: rgba(255, 255, 255, 0.95);
+  --vp-c-text-2: rgba(255, 255, 255, 0.75);
+  --vp-c-text-3: rgba(255, 255, 255, 0.5);
+
+  /* 品牌与UI元素颜色 - 在暗色模式下使用更亮的颜色 */
+  --vp-c-indigo-1: #fbbf24;
+  --vp-c-indigo-2: #f59e0b;
+  --vp-c-indigo-3: #d97706;
+  --vp-c-indigo-soft: rgba(251, 191, 36, 0.16);
+
+  --vp-c-purple-1: #fbbf24;
+  --vp-c-purple-2: #f59e0b;
+  --vp-c-purple-3: #d97706;
+  --vp-c-purple-soft: rgba(251, 191, 36, 0.16);
+
+  --vp-c-green-1: #fbbf24;
+  --vp-c-green-2: #f59e0b;
+  --vp-c-green-3: #d97706;
+  --vp-c-green-soft: rgba(251, 191, 36, 0.16);
+
+  --vp-c-yellow-1: #fbbf24;
+  --vp-c-yellow-2: #f59e0b;
+  --vp-c-yellow-3: #d97706;
+  --vp-c-yellow-soft: rgba(251, 191, 36, 0.16);
+
+  --vp-c-red-1: #fbbf24;
+  --vp-c-red-2: #f59e0b;
+  --vp-c-red-3: #d97706;
+  --vp-c-red-soft: rgba(251, 191, 36, 0.16);
 
   /* 边框颜色 */
   --vp-c-border: #925d14;
@@ -1518,10 +1570,36 @@
   --vp-c-bg-elv: #3c1724;
   --vp-c-bg-soft: #3c1724;
 
-  /* 文本颜色 */
-  --vp-c-text-1: rgba(254, 226, 233, 0.9);
-  --vp-c-text-2: rgba(254, 226, 233, 0.62);
-  --vp-c-text-3: rgba(254, 226, 233, 0.4);
+  /* 文本颜色 - 提高亮度和对比度 */
+  --vp-c-text-1: rgba(255, 255, 255, 0.95);
+  --vp-c-text-2: rgba(255, 255, 255, 0.75);
+  --vp-c-text-3: rgba(255, 255, 255, 0.5);
+
+  /* 品牌与UI元素颜色 - 在暗色模式下使用更亮的颜色 */
+  --vp-c-indigo-1: #fb7185;
+  --vp-c-indigo-2: #e11d48;
+  --vp-c-indigo-3: #be123c;
+  --vp-c-indigo-soft: rgba(251, 113, 133, 0.16);
+
+  --vp-c-purple-1: #fb7185;
+  --vp-c-purple-2: #e11d48;
+  --vp-c-purple-3: #be123c;
+  --vp-c-purple-soft: rgba(251, 113, 133, 0.16);
+
+  --vp-c-green-1: #fb7185;
+  --vp-c-green-2: #e11d48;
+  --vp-c-green-3: #be123c;
+  --vp-c-green-soft: rgba(251, 113, 133, 0.16);
+
+  --vp-c-yellow-1: #fb7185;
+  --vp-c-yellow-2: #e11d48;
+  --vp-c-yellow-3: #be123c;
+  --vp-c-yellow-soft: rgba(251, 113, 133, 0.16);
+
+  --vp-c-red-1: #fb7185;
+  --vp-c-red-2: #e11d48;
+  --vp-c-red-3: #be123c;
+  --vp-c-red-soft: rgba(251, 113, 133, 0.16);
 
   /* 边框颜色 */
   --vp-c-border: #852237;
