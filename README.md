@@ -1,7 +1,7 @@
 # VitePress Colorful Themes | VitePress 多彩主题
 
 <p align="center">
-  <img src="./public/logo.png" width="200" alt="VitePress Colorful Theme" style="border-radius: 50%; overflow: hidden;">
+  <img src="./public/logo.png" width="200" alt="VitePress Colorful Theme" style="max-width: 100%;border-radius: 50%">
 </p>
 
 <p align="center">
