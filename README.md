@@ -12,6 +12,22 @@
 
 [English](#English) | [中文](#中文)
 
+## Effects
+
+![](./public/白天-翡翠绿.png)
+
+![](./public/黑夜-翡翠绿.png)
+
+![](./public/白天-宝石蓝.png)
+
+![](./public/黑夜-宝石蓝.png)
+
+![](./public/白天-琥珀黄.png)
+
+![](./public/黑夜-琥珀黄.png)
+
+### And more ... waiting for you to discover (等待你来发现)
+
 ---
 
 <h2 id="English">English</h2>

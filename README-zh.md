@@ -12,22 +12,6 @@
 
 [English](./README.md) | 中文
 
-## Effects
-
-![](./public/白天-翡翠绿.png)
-
-![](./public/黑夜-翡翠绿.png)
-
-![](./public/白天-宝石蓝.png)
-
-![](./public/黑夜-宝石蓝.png)
-
-![](./public/白天-琥珀黄.png)
-
-![](./public/黑夜-琥珀黄.png)
-
-### And more ... waiting for you to discover (等待你来发现)
-
 ---
 
 一个为 VitePress 提供 16 种精美预设主题和平滑主题切换动画的主题扩展。
